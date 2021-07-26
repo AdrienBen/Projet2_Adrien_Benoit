@@ -1,0 +1,212 @@
+.logo {
+    width: 90px;
+    margin-top: 20px;
+
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 48px;
+}
+.header-link {
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    padding: 36px 25px;
+    color: black;
+    display: inline-block;
+
+}
+.header-link:hover {
+    display: inline-block;
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}   
+.subscribe {
+    font-weight: bold;
+    color: #0065FC;
+}
+.search h1, .search p{
+    margin: 0px;
+}
+.search h1 {
+    font-size: 20px;
+}
+.search p {
+    font-size: 15px;
+    margin: 5px 0px;
+}
+.search {
+    margin: 20px 0px;
+}
+.search-button {
+    display: flex;
+    font-size: 20px;
+    margin-top: 15px;
+    align-items: center;
+}
+.marker {
+    padding: 12px 13px 13px;
+    background-color: lightgray;
+    border-radius: 10px 0px 0px 10px;
+
+}
+.search-button input {
+    width: 211px;
+    height: 45px;
+    border: 1px solid lightgray;
+    border-left: 0px;
+    border-right: 0px;
+    padding-left: 15px;
+}
+.search-icon {
+    width: 120px;
+    height: 45px;
+    color: white;
+    background-color:#0065FC;
+    border-radius: 0px 10px 10px 0px;
+    border-style: none;
+}
+.filters {
+    display: flex;
+    align-items: center;
+    margin: 15px 0px 0px 5px;
+    font-size: 15px;
+}
+.filter-big {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 10px;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    border:1px solid #DEEBFF;
+    z-index: 1;
+    background-color: #DEEBFF;
+
+}
+.filters-link {
+    display: flex;
+    list-style: none;
+    margin-left: 15px;
+}
+.filters-link-big{
+    display: flex;
+    align-items: center;
+}
+.big {
+    display: inline-block;
+    padding: 10px 15px 10px 30px;
+    border-radius: 0px 21px 21px 0px;
+    border: 1px solid gray;
+    border-left: 0px;
+    margin: -21px;
+    margin-right: 10px;
+}
+.filters-link-small {
+    display: flex;
+    align-items: center;
+}
+.filter-small {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 13px;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    z-index: 1;
+    background-color: #DEEBFF;
+    margin-left: 10px;
+}
+.small {
+    display: inline-block;
+    padding: 10px 15px 10px 30px;
+    border-radius: 0px 21px 21px 0px;
+    border: 1px solid gray;
+    border-left: 0px;
+    margin: -21px;
+    margin-right: 10px;
+}
+.filters-link-medium {
+    display: flex;
+    align-items: center;
+
+}
+.filter-medium {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 12px;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    z-index: 1;
+    background-color: #DEEBFF;
+    margin-left: 10px;
+}
+.medium {
+    padding: 10px 15px 10px;
+    display: inline-block;
+    padding: 10px 15px 10px 30px;
+    border-radius: 0px 21px 21px 0px;
+    border: 1px solid gray;
+    border-left: 0px;
+    margin: -21px;
+    margin-right: 10px;
+}
+.filters-link-hard {
+    display: flex;
+    align-items: center;
+}
+.filter-hard {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 13px;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    z-index: 1;
+    background-color: #DEEBFF;
+    margin-left: 10px;
+}
+.hard {
+    padding: 10px 15px 10px;
+    display: inline-block;
+    padding: 10px 15px 10px 30px;
+    border-radius: 0px 21px 21px 0px;
+    border: 1px solid gray;
+    border-left: 0px;
+    margin: -21px;
+    margin-right: 10px; 
+}
+body {
+    margin: 0px;
+    background-image: url(/images/maquette-test.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    font-family: 'Raleway', sans-serif;
+}
+.info-circle {
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+    font-size: 20px;
+    
+}
+.paragraph {
+    display: flex;
+    margin: 12px 0px;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 0px 50px;
+}
+footer {
+    display: none;
+}
