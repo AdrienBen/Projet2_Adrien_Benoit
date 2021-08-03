@@ -102,7 +102,7 @@
     display: inline-block;
     padding: 10px 15px 10px 30px;
     border-radius: 0px 21px 21px 0px;
-    border: 1px solid gray;
+    border: 1px solid #F2F2F2;
     border-left: 0px;
     margin: -21px;
     margin-right: 15px;
@@ -128,7 +128,7 @@
     display: inline-block;
     padding: 10px 15px 10px 30px;
     border-radius: 0px 21px 21px 0px;
-    border: 1px solid gray;
+    border: 1px solid #F2F2F2;
     border-left: 0px;
     margin: -21px;
     margin-right: 10px;
@@ -155,7 +155,7 @@
     display: inline-block;
     padding: 10px 15px 10px 30px;
     border-radius: 0px 21px 21px 0px;
-    border: 1px solid gray;
+    border: 1px solid #F2F2F2;
     border-left: 0px;
     margin: -21px;
     margin-right: 10px;
@@ -176,49 +176,59 @@
     margin-left: 15px;
     color: #0065FC;
 }
+.effect:hover{
+    box-shadow: inset -1px 3px 8px 5px #F2F2F2; 
+}
 .hard {
     padding: 10px 15px 10px;
     display: inline-block;
     padding: 10px 15px 10px 30px;
     border-radius: 0px 21px 21px 0px;
-    border: 1px solid gray;
+    border: 1px solid #F2F2F2;
     border-left: 0px;
     margin: -21px;
     margin-right: 10px; 
 }
-body {
-    margin: 0px;
-    background-image: url(/images/maquette-test.png);
-    background-repeat: no-repeat;
-    background-position: center 0;
-    font-family: 'Raleway', sans-serif;
-}
 .info-circle {
     display: flex;
+    justify-content: center;
     align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
     margin: 0px 5px;
-    font-size: 20px;
-    
+    font-size: 12px; 
+    color: #0065FC;
 }
 .paragraph {
     display: flex;
     margin: 12px 0px;
+    align-items: center;
+}
+.block-accommodation-1 {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    background-color: #F2F2F2;
+    opacity: 0,33%;
+    border-radius: 20px;
 }
 .title-accommodation {
-    margin-top: 70px;
-    margin-left: 29px;
-    margin-bottom: 25px;
+    margin-top: 35px;
+    margin-left: 30px;
+    margin-bottom: -5px;
     font-size: 13px;
 }
 .accomodations {
     /* border: solid 1px red; */
     display: flex;
     flex-wrap: wrap;
-    width: 66%;
+    width: 100%;
     /* justify-content: space-around; */
 }
 .accomodation-block {
-/*     border: solid 2px green;*/    
+    /*     border: solid 2px green;*/    
     width: 33%;
     padding: 20px;
 }
@@ -229,6 +239,7 @@ body {
     box-shadow: 0px 3px 16px 5px rgba(0,0,0,0.2); 
     transition: all 0.2s;
     cursor: pointer;
+    background-color: white;
 }
 .accomodation-card a {
     text-decoration: none;
@@ -248,7 +259,7 @@ body {
     margin-top: 5px;
     margin-bottom: 2px;
     margin-left: 20px;
-    font-size: 15px;
+    font-size: 13px;
 }
 .accommodation-card-body p {
     margin-top: 0px;
@@ -261,15 +272,92 @@ body {
     
 }
 .star {
-    font-size: 12px;
+    font-size: 11px;
     color: #0065FC;
+}
+.no-star {
+    color: #F2F2F2;
+}
+.popular-star {
+    margin-top: 30px;
 }
 .more {
     margin-left: 35px;
     margin-top: 10px;
     font-weight: bold;  
 }
-
+.popular-block-section {
+    display: flex;
+    width: 33%;
+    flex-flow: column;
+    background-color: #F2F2F2;
+    opacity: 0,33%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+}
+.title-popular {
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-popular i {
+    font-size: 20px;
+}
+.popular {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+/*     border: 1px solid red;
+ */}
+ .popular-card:hover {
+    box-shadow: 0px 3px 16px 5px rgba(0,0,0,0.5);
+ }
+.popular-block {
+/*     border: 2px solid green;
+ */    width: 100%;
+    
+}
+.popular-card {
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 3px 16px 5px rgba(0,0,0,0.2); 
+    transition: all 0.2s;
+    cursor: pointer;
+    background-color: white;
+    margin-bottom: 30px;
+    
+}
+.popular-card img {
+    height: 130px;
+    width: 130px;
+    /* border: 3px solid white; */
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.popular-card-body {
+    float: right;
+    margin-left: 15px;
+    margin-right: 50px;
+}
+.popular-card-body h3 {
+    font-size: 13px;
+}
+.popular-card-body p {
+    font-size: 12px;
+}
+.popular-card a {
+    text-decoration: none;
+    color: black;
+}
+.general {
+    display: flex;
+}
 * {
     box-sizing: border-box;
 }
@@ -277,6 +365,13 @@ body {
     max-width: 1280px;
     margin: auto;
     padding: 0px 50px;
+}
+body {
+    margin: 0px;
+/*     background-image: url(/images/maquette-test.png);
+ */    background-repeat: no-repeat;
+    background-position: center 0;
+    font-family: 'Raleway', sans-serif;
 }
 footer {
     display: none;
@@ -286,9 +381,10 @@ footer {
     .accomodation-block {
         width: 50%;
     }
- }
- 
+}
+
 @media all and (max-width: 480px) { 
     .accomodation-block {
         width: 100%;
+    }
 }
