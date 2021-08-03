@@ -215,7 +215,7 @@
     border-radius: 20px;
 }
 .title-accommodation {
-    margin-top: 35px;
+    margin-top: 25px;
     margin-left: 30px;
     margin-bottom: -5px;
     font-size: 13px;
@@ -250,7 +250,7 @@
 }
 .accomodation-card img {
     width: 100%;
-    height: 100px;
+    height: 130px;
     object-fit: cover;
     border: 3px solid white;
     border-radius: 20px 20px 0px 0px;
@@ -269,6 +269,7 @@
 }
 .star-one {
     margin-left: 20px;
+    margin-bottom: 10px;
     
 }
 .star {
@@ -283,7 +284,7 @@
 }
 .more {
     margin-left: 35px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-weight: bold;  
 }
 .popular-block-section {
@@ -301,6 +302,7 @@
     font-size: 13px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 .title-popular i {
     font-size: 20px;
@@ -377,7 +379,9 @@
 .different-activities {
     display: flex;
  }
-
+ .about .end-margin {
+    margin-bottom: 30px;
+ }
 .block-large {
     height: 100%;
     width: 25%;
@@ -460,8 +464,32 @@ body {
     background-position: center 0;
     font-family: 'Raleway', sans-serif;
 }
-footer {
-    display: none;
+.end {
+    display: flex;
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
+    margin: 20px 20px 0px 20px;
+}
+.end a {
+    text-decoration: none;
+    color: grey;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.our-accommodation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+.assistance {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
