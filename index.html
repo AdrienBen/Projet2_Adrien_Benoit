@@ -22,11 +22,17 @@
     <header>
         <div class="header">
             <img class="logo" src="images/logo/Reservia@3x.png" alt="Logo Reservia">
-            <nav>
-                <a class="header-link" href="#accommodation">Hébergements</a>
-                <a class="header-link" href="#activites">Activités</a>
-                <a class="header-link subscribe" href="#" title="S'inscrire sur Reservia">S'inscrire</a>
-            </nav>
+            <div class="header-nav">
+                <nav>
+                    <div class="header-accommodation">
+                        <a class="header-link" href="#accommodation">Hébergements</a>
+                        <a class="header-link" href="#activites">Activités</a>
+                    </div>
+                    <div class="header-sub">
+                        <a class="header-link subscribe" href="#" title="S'inscrire sur Reservia">S'inscrire</a>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
     <main class="container">
@@ -48,29 +54,27 @@
             <div class="filters">
                 <p>Filtres</p>
                 <ul class="filters-link">
-
-                    <li class="filters-link-big">
-                        <i class="fas fa-money-bill-wave filter-big"></i>
-                        <span class="big effect">
+                    <li class="filter-button">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>
                             Économique
                         </span>
                     </li>
-
-                    <li class="filters-link-small hover">
-                        <i class="fas fa-child filter-small"></i>
-                        <span class="small effect">
+                    <li class="filter-button hover">
+                        <i class="fas fa-child"></i>
+                        <span>
                             Famillial
                         </span>
                     </li>
-                    <li class="filters-link-medium">
-                        <i class="fas fa-heart filter-medium"></i>
-                        <span class="medium effect">
+                    <li class="filter-button">
+                        <i class="fas fa-heart"></i>
+                        <span>
                             Romantique
                         </span>
                     </li>
-                    <li class="filters-link-hard">
-                        <i class="fas fa-dog filter-hard"></i>
-                        <span class="hard effect">
+                    <li class="filter-button">
+                        <i class="fas fa-dog"></i>
+                        <span>
                             Animaux Autorisés
                         </span>
                     </li>
@@ -258,16 +262,16 @@
 
                                 <div class="popular-card-body">
                                     <h3>
-                                        Hôtel Le Soleil du <br />matin
+                                        Hôtel Le Soleil du matin
                                     </h3>
                                     <p>
                                         Nuit à partir de <b>128€</b>
                                     </p>
                                     <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
                                 </div>
                             </a>
                         </div>
@@ -282,16 +286,16 @@
 
                                 <div class="popular-card-body">
                                     <h3>
-                                        Au coeur de l'eau<br />Chambres D'Hôtes
+                                        Au coeur de l'eau Chambres D'Hôtes
                                     </h3>
                                     <p>
                                         Nuit à partir de <b>71€</b>
                                     </p>
                                     <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star no-star popular-star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star no-star"></i>
                                 </div>
                             </a>
                         </div>
@@ -306,16 +310,16 @@
 
                                 <div class="popular-card-body">
                                     <h3>
-                                        Hôtel Tout Bleu et<br />Blanc
+                                        Hôtel Tout Bleu et Blanc
                                     </h3>
                                     <p>
                                         Nuit à partir de <b>68€</b>
                                     </p>
                                     <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star popular-star"></i>
-                                    <i class="fas fa-star star no-star popular-star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star no-star"></i>
                                 </div>
                             </a>
                         </div>
@@ -330,71 +334,72 @@
                 </h2>
             </div>
             <div class="different-activities">
-                <article class="block-large">
-                    <div class="block-large-img">
-                        <a href="#" target="_blank">
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                alt="Photo d'un port">
+                <article class="act-block block-large">
+                    <a href="#" target="_blank">
+                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="Photo d'un port">
+                        <div class="block-caption">
                             <p>
                                 Vieux Port
                             </p>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </article>
-                <article class="block-mid">
-                    <div class="block-mid-img">
-                        <a href="#" target="_blank">
-                            <img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                alt="Photo d'un Fort">
+                <article class="act-block block-medium">
+                    <a href="#" target="_blank">
+                        <img src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                            alt="Photo d'un Fort">
+                        <div class="block-caption">
                             <p>
                                 Fort de Pomègues
                             </p>
-                        </a>
-                    </div>
+                        </div>
+
+                    </a>
                 </article>
-                <article class="block-very-small">
-                    <div class="block-very-small-img">
-                        <a href="#" target="_blank">
-                            <img src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                alt="Photo d'une mer">
+                <article class="act-block block-x-small">
+                    <a href="#" target="_blank">
+                        <img src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                            alt="Photo d'une mer">
+                        <div class="block-caption">
                             <p>
                                 Îles du Frioul
                             </p>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </article>
-                <article class="block-large">
-                    <div class="block-large-img">
-                        <a href="#" target="_blank">
-                            <img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                                alt="Photo de montagne">
+                <article class="act-block block-large">
+                    <a href="#" target="_blank">
+                        <img src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Photo de montagne">
+                        <div class="block-caption">
                             <p>
                                 Parc National des Calanques
                             </p>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </article>
-                <article class="block-small">
-                    <div class="block-small-img">
-                        <a href="#" target="_blank">
-                            <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                alt="Image de notre Dame">
+                <article class="act-block block-small">
+                    <a href="#" target="_blank">
+                        <img src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            alt="Image de notre Dame">
+                        <div class="block-caption">
                             <p>
                                 Notre-Dame-De-La-Garde
                             </p>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </article>
-                <article class="block-midium">
-                    <div class="block-midium-img">
-                        <a href="#" target="_blank">
-                            <img src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                alt="Image de fontaine">
+                <article class="act-block block-small">
+                    <a href="#" target="_blank">
+                        <img src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            alt="Image de fontaine">
+                        <div class="block-caption">
                             <p>
                                 Parc Longchamps
                             </p>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </article>
             </div>
         </section>
