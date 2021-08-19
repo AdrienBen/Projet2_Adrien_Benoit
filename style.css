@@ -61,6 +61,7 @@
     border-left: 0px;
     border-right: 0px;
     padding-left: 15px;
+    margin-right: -10px;
 }
 .search-icon {
     width: 120px;
@@ -410,6 +411,9 @@ body {
     flex-direction: column;
     margin-left: 20%;
 }
+.search-img {
+    visibility: hidden;
+}
 
 /* small screen */
 @media all and (max-width: 1200px) {
@@ -495,6 +499,18 @@ body {
     .act-block {
         width: auto;
         height: 250px !important;
+    }
+    .search-icon {
+        display: none;
+    }
+    .search-img {
+        visibility: visible;
+        width: 55px;
+        height: 45px;
+        color: white;
+        background-color:#0065FC;
+        border-radius: 15px 15px 15px 15px;
+        border-style: none;
     }
 }
 
